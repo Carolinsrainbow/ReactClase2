@@ -1,9 +1,16 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import useTitle from "./hooks/useTitle"
 
 function App() {
   const [counter, setCounter] = useState(0);
   console.log(counter);
+
+useEffect(()=>{
+  console.log("hay un cambio en el state")
+},[])
+
+useTitle(counter + "")
 
   return (
     <div className="App">
