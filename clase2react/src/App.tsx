@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       Counter = {counter}
-      <button onClick={(e) => setCounter(counter + 1)}>Sumar</button>
-      <button onClick={(e) => setCounter(counter - 1)}>Restar</button>
+      <button onClick={() => setCounter(counter + 1)}>Sumar</button>
+      <button onClick={() => setCounter(counter - 1)}>Restar</button>
     </div>
   );
 }
